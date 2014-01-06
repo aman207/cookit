@@ -1,0 +1,65 @@
+name: CookIt
+main: aman207.uni.me.cookit.CookIt
+version: 1.0
+description: CookIt allows you to easly exchange raw food and ores from your inventory, and change it into cook food and ores.
+website: http://dev.bukkit.org/bukkit-plugins/cookit/
+author: aman207
+
+commands:
+    cook:
+     description: General command for CookIt's needs
+     aliases: [cooka, ore, food]
+permissions:
+    cookit.*:
+        description: 'Master permission'
+        children:
+            cookit.food.*: true
+            cookit.ore.*: true
+            cookit.admin: true
+        default: op
+    cookit.food.*:
+        description: Permission to cook all foods
+        children:
+            cookit.food.chicken: true
+            cookit.food.beef: true
+            cookit.food.fish: true
+            cookit.food.pork: true
+            cookit.food.potato: true
+    cookit.ore.*:
+        description: Permission to cook all ores
+        children:
+                cookit.ore.diamond: true
+                cookit.ore.coal: true
+                cookit.ore.gold: true
+                cookit.ore.emerald: true
+                cookit.ore.iron: true
+                cookit.ore.lapis: true
+                cookit.ore.redstone: true
+                cookit.ore.quartz: true
+
+    cookit.food.chicken:
+        description: 'Turns raw chicken into cooked chicken'
+    cookit.food.beef:
+        description: 'Turns beef into cooked beef'
+    cookit.food.fish:
+        description: 'Turns raw fish into cooked fish'
+    cookit.food.pork:
+        description: 'Turns raw pork into cooked pork'
+    cookit.food.potato:
+        description: 'Turns potato into cooked potato'
+    cookit.ore.diamond:
+        description: 'Turns diamond ore into diamond'
+    cookit.ore.coal:
+        description: 'Turns coal ore into coal'
+    cookit.ore.gold:
+        description: 'Turns gold ore into gold ingot'
+    cookit.ore.emerald:
+        description: 'Turns emerald ore into emerald'
+    cookit.ore.iron:
+        description: 'Turns iron ore into iron ingot'
+    cookit.ore.lapis:
+        description: 'Turns Lapis Lazuli ore into Lapis Luzali'
+    cookit.ore.redstone:
+        description: 'Turns redstone ore into redstone'
+    cookit.ore.quartz:
+        description: 'Turns quartz ore into quartz'
