@@ -1,7 +1,5 @@
 package aman207.uni.me.cookit;
 
-import java.util.logging.Logger;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -46,13 +44,20 @@ public class CommandListener implements Listener, CommandExecutor {
 			        		noPermission(sender, "pork");
 			        	}
 			        }
-			        /**
-			        else if (item == 349) 
+			        
+			        else if (item.name().equals("RAW_FISH")) 
 			        {
-			          player.setItemInHand(new ItemStack(350, second));
-			          player.sendMessage(ChatColor.GREEN + "Successfully cooked Raw Fish!");
+			        	if(sender.hasPermission("cookit.food.fish"))
+			        	{
+			        		player.setItemInHand(new ItemStack(Material.COOKED_FISH, second));
+					        player.sendMessage(ChatColor.GREEN + "Successfully cooked Raw Fish!");
+			        	}
+			        	else
+			        	{
+			        		noPermission(sender, "fish");
+			        	}
 			        }
-			        */
+			        
 			        else if (item.name().equals("RAW_BEEF")) 
 			        {
 			        	if(sender.hasPermission("cookit.food.beef"))
