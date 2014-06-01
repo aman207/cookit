@@ -1,8 +1,8 @@
 name: CookIt
-main: aman207.uni.me.cookit.CookIt
-version: 1.0
+main: net.aman207.cookit.CookIt
+version: 1.1
 description: CookIt allows you to easly exchange raw food and ores from your inventory, and change it into cook food and ores.
-website: http://dev.bukkit.org/bukkit-plugins/cookit/
+website: http://aman207.net/wiki
 author: aman207
 
 commands:
@@ -36,7 +36,10 @@ permissions:
                 cookit.ore.lapis: true
                 cookit.ore.redstone: true
                 cookit.ore.quartz: true
-
+                cookit.ore.sand: true
+    cookit.admin:
+        description: 'Notifys users with this permission of a new update'
+        
     cookit.food.chicken:
         description: 'Turns raw chicken into cooked chicken'
     cookit.food.beef:
@@ -63,3 +66,5 @@ permissions:
         description: 'Turns redstone ore into redstone'
     cookit.ore.quartz:
         description: 'Turns quartz ore into quartz'
+    cookit.ore.sand:
+        description: 'Turns sand into glass'

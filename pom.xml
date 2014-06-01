@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>aman207.uni.me</groupId>
+  <groupId>net.aman207</groupId>
   <artifactId>cookit</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <name>cookit</name>
-  <url>http://maven.apache.org</url>
+  <url>http://aman207.net</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +33,7 @@
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <!-- Bukkit API Version, change if necessary -->
-            <version>1.7.2-R0.3-SNAPSHOT</version>
+            <version>1.7.9-R0.1</version>
     </dependency>
   </dependencies>
 </project>
