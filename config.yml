@@ -1,0 +1,10 @@
+# CookIt Config
+# http://aman207.net/wiki/CookIt
+
+# Uses http://mcstats.org 
+metrics: true
+
+# Will notify a user with the cookit.admin permission (or op's) of a new update, but will not download
+update-notification: true
+
+version: 1.1
